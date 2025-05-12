@@ -42,7 +42,7 @@ public class UrlServiceTest {
 
     @Test
     public void testNotStoredUrlThrowsException() {
-        String invalidShortCode = "1111";  //as the logic shorten URL has at 8 characters
+        String invalidShortCode = "1111";  //as the logic shorten URL has 8 characters
         assertThrows(UrlNotFoundException.class, () -> {
             urlService.getOriginalURL(invalidShortCode);
         });

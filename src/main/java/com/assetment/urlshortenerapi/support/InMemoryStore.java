@@ -22,10 +22,6 @@ public class InMemoryStore {
         return this.urlStore.containsKey(shortenUrl);
     }
 
-    public boolean containsLongURL(String longUrl) {
-        return this.urlStore.containsValue(longUrl);
-    }
-
     public String getShortenURLFromLongURL(String longUrl) {
         return this.urlStore
                 .entrySet()
